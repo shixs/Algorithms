@@ -16,8 +16,19 @@ public class SingleNumber{
     return sum;
   }
 
+  public static int singleNumberXOR(int[] nums){
+    if(nums == null){
+      return 0;
+    }
+    int singleNum = 0;
+    for(int i = 0;i < nums.length;i++){
+      singleNum ^= nums[i];
+    }
+    return singleNum;
+  }
+
   public static void main(String[] args){
     int[] nums = {1,1,2,3,4,3,4,6,2};
-    System.out.println(singleNumber(nums));
+    System.out.println(singleNumberXOR(nums));
   }
 }
