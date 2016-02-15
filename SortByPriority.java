@@ -1,6 +1,7 @@
 import java.util.*;
 /*
-* Given a defined priority list and a string, return the sorted results. 
+* Given a defined priority list and a string. Return a new string which contains characters sorted
+* based on priority from priority list. 
 * priority list, [p,e,a,l], string, "apple"   should return "ppeal"
 *
 */
