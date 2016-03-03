@@ -1,8 +1,7 @@
-import java.io.*;
-import java.util.*;
+package com.xshi.app;
 
 public class PlusOne{
-	public static int[] plusOne(int[] digits){
+	public int[] plusOne(int[] digits){
 		if(digits == null || digits.length < 1){
 			throw new IllegalArgumentException();
 		}
@@ -16,13 +15,5 @@ public class PlusOne{
 		int[] newNums = new int[digits.length + 1];
 		newNums[0] = 1;
 		return newNums; 
-	}
-
-	public static void main(String[] args){
-		int[] digits = {9};
-		int[] res = plusOne(digits);
-		for(int n : res){
-			System.out.print(n + " ");
-		}
 	}
 }
