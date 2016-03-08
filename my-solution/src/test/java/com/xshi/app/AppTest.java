@@ -1,7 +1,4 @@
-import com.xshi.app.RemoveDuplicateWords;
-import com.xshi.app.ConvertSortedArrayToBST;
-import com.xshi.app.KthSmallestElement;
-import com.xshi.app.TreeNode;
+package com.xshi.app;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -16,15 +13,20 @@ public class AppTest {
     @Test
     public void testApp()
     {
-        //RemoveDuplicateWords rdw = new RemoveDuplicateWords();
-        //String sentence = "this is a book a this";
-        //ConvertSortedArrayToBST toBST = new ConvertSortedArrayToBST();
-        //TreeNode node = toBST.sortedArrayToBST(nums);
-        //printGeneratedTree(node);
+        /*RemoveDuplicateWords rdw = new RemoveDuplicateWords();
+        String sentence = "this is a book a this";
+        ConvertSortedArrayToBST toBST = new ConvertSortedArrayToBST();
+        TreeNode node = toBST.sortedArrayToBST(nums);
+        printGeneratedTree(node);
         KthSmallestElement kse = new KthSmallestElement();
         int res = kse.kthSmallest(generateBST(),3);
-        Assert.assertEquals(res,4);
-        //Assert.assertArrayEquals(nums,res);
+        Assert.assertArrayEquals(nums,res);
+        */
+        Fraction fraction = new Fraction();
+        String res = fraction.fractionToDecimal(1,3);
+        String expected = "0.(3)";
+        Assert.assertEquals("Good one!",res,expected);
+
     }
 
     private TreeNode generateBST(){

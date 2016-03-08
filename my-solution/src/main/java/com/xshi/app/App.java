@@ -4,7 +4,7 @@ import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 public class App {
     public static void main( String[] args ){
-        Result result = JUnitCore.runClasses(KthSmallestElement.class);
+        Result result = JUnitCore.runClasses(Fraction.class);
         for(Failure failure : result.getFailures()){
           System.out.println(failure.toString());
         }
