@@ -14,9 +14,11 @@ public class Fraction {
     }
     StringBuffer res = new StringBuffer();
     res.append(((numerator > 0) ^ (denominator > 0)) ? "-" : "");
-    int remainder = numerator % denominator;
-    res.append(numerator / denominator);
-    HashMap<Integer, Integer> map = new HashMap<>();
+    long num = Math.abs((long)numerator);
+    long den = Math.abs((long)denominator);
+    long remainder = num % den;
+    res.append(num / den);
+    HashMap<Long, Integer> map = new HashMap<>();
     if(remainder == 0){
       return res.toString();
     }else{
@@ -24,8 +26,8 @@ public class Fraction {
       map.put(remainder,res.length());
       while(remainder != 0){
         remainder *= 10;
-        res.append(remainder / denominator);
-        remainder %= denominator;
+        res.append(remainder / den);
+        remainder %= den;
         if(map.containsKey(remainder)){
           int index = map.get(remainder);
           res.insert(index,"(");
