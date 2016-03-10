@@ -21,11 +21,15 @@ public class AppTest {
         KthSmallestElement kse = new KthSmallestElement();
         int res = kse.kthSmallest(generateBST(),3);
         Assert.assertArrayEquals(nums,res);
-        */
+        
         Fraction fraction = new Fraction();
         String res = fraction.fractionToDecimal(1,3);
         String expected = "0.(3)";
         Assert.assertEquals("Good one!",res,expected);
+        */
+        DivideTwoIntegers dti = new DivideTwoIntegers();
+        Assert.assertEquals("Overflow", dti.divide(-2147483648,1), Integer.MIN_VALUE);
+        Assert.assertEquals("Pass",dti.divide(-7,2),-3);
 
     }
 
