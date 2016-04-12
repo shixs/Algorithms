@@ -1,3 +1,4 @@
+package com.xshi.app;
 public class BestTimeToBuyAndSellStock{
   public int maxProfit(int[] prices){
     if(prices == null || prices.length < 1){

@@ -1,3 +1,4 @@
+package com.xshi.app;
 import java.util.*;
 public class BinaryTreeRightSide{
   public List<Integer> rightSideView(TreeNode root){
